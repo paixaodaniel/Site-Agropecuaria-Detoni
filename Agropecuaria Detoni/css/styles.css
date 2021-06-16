@@ -10510,19 +10510,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 }
 
-.mg_gado{
-  margin-right: 0;
-  margin-left: 0;
-}
+.center_991{
+  padding: 0;
+  right: 5%;
 
-.mg_gado2{
-  margin-right: 0;
-  margin-left: -1%;
+
 }
 
 
 .site-section-heading_3{
   text-align: center;
+  left:-7px;
   margin-left: 0 !important;
   margin-top: 3%;
 }
@@ -10540,6 +10538,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .site-section-heading_4{
   text-align: center;
+  left: -7px;
   margin-top: 3%;
 }
 
@@ -10554,8 +10553,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 .dsc_gado{
-  margin-left: 4%;
-  
+  margin-left: -2%;
+
 }
 
 
@@ -10588,7 +10587,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .dsc_gado{
 
-    margin-right: 4% !important;
+    margin-right: 0;
   }
 
 
@@ -11547,9 +11546,10 @@ input[name="r"]{
 
 max-height: 0px;
 overflow: hidden;
-padding: 0;
+padding: 0 20px;
 margin-top: 3%;
 transition:1.4s;
+
 
 
 }
@@ -11579,6 +11579,16 @@ transition:1.4s;
 
 }
 
+.btn_vermais:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+.btn_vermais2:hover{
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
 .seta_up {
   color: #135542;
   font-weight:bold;
@@ -11596,7 +11606,7 @@ transition:1.4s;
 
 .underline{
 
-  width: 90%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
