@@ -10387,7 +10387,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 
-
+.dsc_gado_2 > p{
+  margin: 0 auto 0 auto;
+}
 
 
 
@@ -10481,7 +10483,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   }
 
-
+  .btn_vermais{
+    display: none;
+  }
+   .btn_vermais2{
+     display: block !important;
+   }
 
 
   .navbar-toggler{
@@ -10548,6 +10555,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .dsc_gado{
   margin-left: 4%;
+  
 }
 
 
@@ -11433,7 +11441,7 @@ margin-right: 5px;
   float: right;
   position: relative;
   top: -5px;
-  right:20px;
+  right:-15px;
 
 }
 
@@ -11492,7 +11500,7 @@ input[name="r"]{
 }
 
 
-#r1:checked ~ .s2,.s3,.s4{
+#r1:checked ~ .s2{
   display: none;
 }
 #r1:checked ~ .s1{
@@ -11507,7 +11515,7 @@ input[name="r"]{
 
 
 
-#r2:checked ~ .s1,.s3,.s4{
+#r2:checked ~ .s1{
   display: none;
 
 }
@@ -11518,26 +11526,6 @@ input[name="r"]{
 
 
 
-
-#r3:checked ~ .s2,.s1,.s4{
-  display: none;
-}
-
-#r3:checked ~ .s3{
-  display: flex;
-}
-
-
-
-
-#r4:checked ~ .s2,.s3,.s1{
-  display: none;
-}
-
-#r4:checked ~ .s4{
-  display: flex;
-
-}
 
 
 .seta {
@@ -11566,8 +11554,30 @@ transition:1.4s;
 
 }
 
+.btn_vermais{
+  border-radius: 5px;
+  border-width: 0;
+  background: #ff8800be;
+  color: white;
+  width: 250px;
+  height: 30px;
+  margin: 10px auto;
+  font-weight: bold;
 
+}
 
+.btn_vermais2{
+  border-radius: 5px;
+  border-width: 0;
+  background: #ff8800be;
+  color: white;
+  width: 100%;
+  height: 30px;
+  margin: 10px auto;
+  font-weight: bold;
+  display: none;
+
+}
 
 .seta_up {
   color: #135542;
