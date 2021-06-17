@@ -10632,7 +10632,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     display: none
   }
 
-
+  .carousel__navigation{
+    padding-bottom: 2% !important;
+  }
+  .carousel{
+    margin-bottom: 0 !important ;
+  }
 
 }
 
@@ -11751,6 +11756,8 @@ ol, li {
   padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+  margin-bottom: -5%
+
 
 }
 
@@ -11777,10 +11784,17 @@ ol, li {
 }
 
 .hanin_slide1{
-  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
-  background-size:85%;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  top: 0;
+  left: 0px;
+  width: 85% !important;
+  height: 546px;
+  margin: auto;
+  margin-left: 85px;
+
+
+
+
 
 }
 .hanin_slide2{
@@ -11838,17 +11852,13 @@ ol, li {
   bottom: 0;
   left: 0;
   text-align: center;
-
-
-
+  padding-bottom: 2%;
 
 }
 
 .carousel__navigation-list,
 .carousel__navigation-item {
   display: inline-block;
-
-
 
 }
 
