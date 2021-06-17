@@ -10391,7 +10391,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: 0 auto 0 auto;
 }
 
+.modal-dialog{
+  max-width: 70%;
+}
 
+
+
+
+.modal_img{
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  object-position: 0 24%;
+  padding: 0 20px 0 20px;
+}
 
 @media(min-width:1200px){
 
@@ -10417,6 +10430,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 }
 
+.genealogia{
+  margin: -5% 2% 0 2%;
+}
 
 
 }
@@ -10461,6 +10477,14 @@ section#contact form#contactForm :-ms-input-placeholder {
 .mg_gado2{
   margin-right: 3%;
   margin-left: -3%;
+}
+
+.modal-dialog{
+  max-width: 900px;
+}
+
+.genealogia{
+  margin: -5% -3% ;
 }
 
 }
@@ -10517,6 +10541,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 }
 
+.modal-dialog{
+  margin: auto auto auto 3%;
+}
+
 
 .site-section-heading_3{
   text-align: center;
@@ -10557,6 +10585,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 }
 
+.genealogia{
+  margin: -5% ;
+}
+
 
 }
 
@@ -10590,6 +10622,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-right: 0;
   }
 
+  .modal-dialog{
+    max-width: 900px;
+  }
+
+
+
 
 
 
@@ -10597,7 +10635,19 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 
+
+.genealogia2{
+  display: none;
+
+}
+
 @media(max-width:576px){
+  .genealogia{
+    display:none
+  }
+  .genealogia2{
+    display: block !important;
+  }
 
 
 }
