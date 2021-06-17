@@ -10431,7 +10431,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% 2% 0 2%;
+  margin: -5% 2% -15% 2%;
 }
 
 
@@ -10484,7 +10484,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% -3% ;
+  margin: -5% -3% -15% -3% ;
 }
 
 }
@@ -10586,7 +10586,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% ;
+  margin: -5% -5% -15% -5% ;
 }
 
 
@@ -10627,7 +10627,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
 
 
-
+  .carousel::before,
+  .carousel::after{
+    display: none
+  }
 
 
 
@@ -10647,6 +10650,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .genealogia2{
     display: block !important;
+    margin-bottom: -15%;
   }
 
 
@@ -11711,54 +11715,13 @@ input[name="rd"]{
 
 
 
-@keyframes tonext {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: 100%;
-  }
-  98% {
-    left: 100%;
-  }
-  99% {
-    left: 0;
-  }
+
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
 }
-
-@keyframes tostart {
-  75% {
-    left: 0;
-  }
-  95% {
-    left: -300%;
-  }
-  98% {
-    left: -300%;
-  }
-  99% {
-    left: 0;
-  }
-}
-
-@keyframes snap {
-  96% {
-    scroll-snap-align: center;
-  }
-  97% {
-    scroll-snap-align: none;
-  }
-  99% {
-    scroll-snap-align: none;
-  }
-  100% {
-    scroll-snap-align: center;
-  }
-}
-
-
-
-
 
 *::-webkit-scrollbar {
   width: 0;
@@ -11786,55 +11749,60 @@ ol, li {
 .carousel {
   position: relative;
   padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+
 }
 
 .carousel__viewport {
   position: absolute;
   top: 0;
   right: 0;
-  bottom:0;
+  bottom: 0;
   left: 0;
   display: flex;
   overflow-x: scroll;
   counter-reset: item;
   scroll-snap-type: x mandatory;
+
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
   width: 100%;
 
+
+
 }
 
-.hanin__slide1 {
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
-  object-fit:contain;
-  flex: 0 0 100% ;
-  width:85%;
-  padding-bottom: -50px;
-}
+.hanin_slide1{
+  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position: center;
 
-.hanin__slide2 {
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
-  object-fit:contain;
-  flex: 0 0 100% ;
-  width:85%;
-  padding-bottom: -50px;
 }
-.hanin__slide3 {
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
-  object-fit:contain;
-  flex: 0 0 100% ;
-  width:85%;
-  padding-bottom: -50px;
+.hanin_slide2{
+  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.hanin__slide4 {
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
-  object-fit:contain;
-  flex: 0 0 100% ;
-  width:85%;
-  padding-bottom: -50px;
+.hanin_slide3{
+  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hanin_slide4{
+  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
+  background-size:85%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .carousel__slide:before {
-  content: counter(item);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11852,18 +11820,6 @@ ol, li {
   scroll-snap-align: center;
 }
 
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
@@ -11882,52 +11838,46 @@ ol, li {
   bottom: 0;
   left: 0;
   text-align: center;
+
+
+
+
 }
 
 .carousel__navigation-list,
 .carousel__navigation-item {
   display: inline-block;
-  padding-bottom: 25px ;
-}
 
 
-.hanin_btn1{
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
 
-.hanin_btn2{
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-.hanin_btn3{
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-.hanin_btn4{
-  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
 }
 
 .carousel__navigation-button {
   display: inline-block;
-  width: 80px;
-  height: 80px;
-  top: 50px;
+  width: 4.5rem;
+  height: 4.5rem;
+  object-fit: cover;
+  background-color: #333;
   background-clip: content-box;
   border: 0.25rem solid transparent;
   font-size: 0;
   transition: transform 0.1s;
+}
+
+.hanin_btn1{
+  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
+}
+
+.hanin_btn2{
+  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
+}
+
+.hanin_btn3{
+  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
+}
+
+.hanin_btn4{
+  content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
 }
 
 .carousel::before,
@@ -11947,22 +11897,23 @@ ol, li {
 
 .carousel::before,
 .carousel__prev {
-  left: -5rem;
+  left: -0rem;
 }
 
 .carousel::after,
 .carousel__next {
-  right: -5rem;
+  right: -0rem;
 }
 
 .carousel::before,
 .carousel::after {
   content: '';
-  z-index: 100;
+  z-index: 5;
+  background-color: transparent;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
-  color: rgb(0, 0, 0);
+  color: transparent;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
@@ -11970,10 +11921,12 @@ ol, li {
 }
 
 .carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23000'/%3E%3C/svg%3E");
+  background-image: url("https://www.lagoagrande.mg.gov.br/css/fontawesome-free-5.9.0-web/svgs/solid/angle-double-left.svg");
+
 }
 
 .carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23000'/%3E%3C/svg%3E");
+  background-image: url("https://www.lagoagrande.mg.gov.br/css/fontawesome-free-5.9.0-web/svgs/solid/angle-double-right.svg")
 }
+
 

@@ -342,7 +342,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" style=" position: relative; " class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
 
@@ -372,11 +372,12 @@
 
 
 
-            <div class="carousel" aria-label="Gallery" style="width: 85%; margin: auto;">
-              <ol class="carousel__viewport " >
+
+            <section class="carousel" aria-label="Gallery" >
+              <ol class="carousel__viewport">
                 <li id="carousel__slide1"
-                    tabindex="0"
-                    class="hanin__slide1">
+
+                    class="carousel__slide hanin_slide1" >
                   <div class="carousel__snapper">
                     <a href="#carousel__slide4"
                        class="carousel__prev">Go to last slide</a>
@@ -385,8 +386,8 @@
                   </div>
                 </li>
                 <li id="carousel__slide2"
-                    tabindex="0"
-                    class="hanin__slide2">
+
+                    class="carousel__slide hanin_slide2">
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide1"
                      class="carousel__prev">Go to previous slide</a>
@@ -394,8 +395,8 @@
                      class="carousel__next">Go to next slide</a>
                 </li>
                 <li id="carousel__slide3"
-                    tabindex="0"
-                    class="hanin__slide3">
+
+                    class="carousel__slide hanin_slide3">
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide2"
                      class="carousel__prev">Go to previous slide</a>
@@ -403,8 +404,8 @@
                      class="carousel__next">Go to next slide</a>
                 </li>
                 <li id="carousel__slide4"
-                    tabindex="0"
-                    class="hanin__slide4">
+
+                    class="carousel__slide hanin_slide4">
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide3"
                      class="carousel__prev">Go to previous slide</a>
@@ -414,13 +415,13 @@
               </ol>
               <aside class="carousel__navigation">
                 <ol class="carousel__navigation-list">
-                  <li class="carousel__navigation-item ">
+                  <li class="carousel__navigation-item">
                     <a href="#carousel__slide1"
                        class="carousel__navigation-button hanin_btn1">Go to slide 1</a>
                   </li>
                   <li class="carousel__navigation-item">
                     <a href="#carousel__slide2"
-                       class="carousel__navigation-button hanin_btn2"></a>
+                       class="carousel__navigation-button hanin_btn2">Go to slide 2</a>
                   </li>
                   <li class="carousel__navigation-item">
                     <a href="#carousel__slide3"
@@ -432,14 +433,10 @@
                   </li>
                 </ol>
               </aside>
-            </div>
+            </section>
 
 
 
-
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
           </div>
         </div>
       </div>
