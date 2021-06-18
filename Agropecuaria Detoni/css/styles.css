@@ -10433,7 +10433,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 .genealogia{
   margin: -5% 2% -5% 2%;
 }
+.carousel-inner{
+  width: 85%;
+  margin: auto;
 
+}
 }
 
 
@@ -10484,6 +10488,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .genealogia{
   margin: -5% -3% -5% -3% ;
+}
+.carousel-inner{
+  width: 93%;
+  margin: auto;
+
 }
 
 }
@@ -10626,17 +10635,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     max-width: 900px;
   }
 
+  .carousel-inner{
+    width: 100%;
 
-  .carousel::before,
-  .carousel::after{
-    display: none
-  }
-
-  .carousel__navigation{
-    padding-bottom: 2% !important;
   }
   .carousel{
-    margin-bottom: 0 !important ;
+    margin-top: 0 !important;
   }
 
 }
@@ -11679,53 +11683,54 @@ transition:1.4s;
 
 
 
-.carousel-inner{
-  width: 85%;
-  margin: auto;
-}
 
 .carousel-indicators{
   position: relative;
   top: 15px
+}
 
+.indicator{
+  width:5vw !important;
+  height: 5vw !important;
+  min-width: 60px;
+  min-height: 60px;
+  border-radius: 4px;
 
 }
 
-
 .indicator_img1{
-  width:80px !important;
-  height: 80px !important;
-  margin: auto;
+
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
   object-fit: cover;
 
+
 }
 .indicator_img2{
-  width:80px !important;
-  height: 80px !important;
-  margin: auto;
+
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
   object-fit: cover;
 
 }
 
 .indicator_img3{
-  width:80px !important;
-  height: 80px !important;
-  margin: auto;
+
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
   object-fit: cover;
 
 }
 
 .indicator_img4{
-  width:80px !important;
-  height: 80px !important;
-  margin: auto;
+
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
   object-fit: cover;
 
 }
 
 
+
+.carousel-indicators > .active{
+  box-shadow: -8px 8px 7px rgba(0, 0, 0, 0.623);
+ transform: scale(1.03);
+ transition: 0.5s;
+}
 
