@@ -5500,8 +5500,8 @@ a.close.disabled {
 
 .modal-content {
   position: relative;
-  display: flex;
-  flex-direction: column;
+
+
   width: 100%;
   pointer-events: auto;
   background-color: #fff;
@@ -10431,9 +10431,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% 2% -15% 2%;
+  margin: -5% 2% -5% 2%;
 }
-
 
 }
 
@@ -10484,7 +10483,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% -3% -15% -3% ;
+  margin: -5% -3% -5% -3% ;
 }
 
 }
@@ -10586,8 +10585,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .genealogia{
-  margin: -5% -5% -15% -5% ;
+  margin: -5% -5% -5% -5% ;
 }
+
 
 
 }
@@ -10655,7 +10655,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .genealogia2{
     display: block !important;
-    margin-bottom: -15%;
+    margin-bottom: -5%;
   }
 
 
@@ -11679,264 +11679,53 @@ transition:1.4s;
 
 
 
-/* Slides de fotos e vídeo do Gado na MODAL
-
-input[name="rd"]{
-  visibility: hidden;
-
-}
-.centro{
+.carousel-inner{
   width: 85%;
   margin: auto;
 }
 
-.img_label{
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-}
-
-#rd1:checked ~ .centro{
-  content: url(../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png);
-}
-
-
-#rd1:checked ~ .ck1{
-
-}
-
-
-#rd2:checked ~ .s1{
-
-
-}
-
-#r2:checked ~ .s2{
-  display: flex;
-}
-*/
-
-
-
-
-
-
-
-* {
-  box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
-}
-
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
-ol, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.carousel {
+.carousel-indicators{
   position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
-  margin-bottom: -5%
+  top: 15px
 
 
 }
 
-.carousel__viewport {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  overflow-x: scroll;
-  counter-reset: item;
-  scroll-snap-type: x mandatory;
 
-}
-
-.carousel__slide {
-  position: relative;
-  flex: 0 0 100%;
-  width: 100%;
-
-
-
-}
-
-.hanin_slide1{
-
-  top: 0;
-  left: 0px;
-  width: 85% !important;
-  height: 546px;
+.indicator_img1{
+  width:80px !important;
+  height: 80px !important;
   margin: auto;
-  margin-left: 85px;
-
-
-
-
-
-}
-.hanin_slide2{
-  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
-  background-size:85%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.hanin_slide3{
-  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
-  background-size:85%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.hanin_slide4{
-  background-image: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
-  background-size:85%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.carousel__slide:before {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-40%,70px);
-  color: #fff;
-  font-size: 2em;
-}
-
-.carousel__snapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  scroll-snap-align: center;
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel__snapper {
-    animation-name: none;
-  }
-}
-
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-  animation-name: none;
-}
-
-.carousel__navigation {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-  padding-bottom: 2%;
-
-}
-
-.carousel__navigation-list,
-.carousel__navigation-item {
-  display: inline-block;
-
-}
-
-.carousel__navigation-button {
-  display: inline-block;
-  width: 4.5rem;
-  height: 4.5rem;
-  object-fit: cover;
-  background-color: #333;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  font-size: 0;
-  transition: transform 0.1s;
-}
-
-.hanin_btn1{
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-001.png');
-}
+  object-fit: cover;
 
-.hanin_btn2{
+}
+.indicator_img2{
+  width:80px !important;
+  height: 80px !important;
+  margin: auto;
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-002.png');
+  object-fit: cover;
+
 }
 
-.hanin_btn3{
+.indicator_img3{
+  width:80px !important;
+  height: 80px !important;
+  margin: auto;
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-003.png');
+  object-fit: cover;
+
 }
 
-.hanin_btn4{
+.indicator_img4{
+  width:80px !important;
+  height: 80px !important;
+  margin: auto;
   content: url('../assets/img/Genealogias_e_Fotos/Hanin-FIV-004.png');
-}
-
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 37.5%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0;
-}
-
-.carousel::before,
-.carousel__prev {
-  left: -0rem;
-}
-
-.carousel::after,
-.carousel__next {
-  right: -0rem;
-}
-
-.carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 5;
-  background-color: transparent;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: transparent;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none;
-}
-
-.carousel::before {
-  background-image: url("https://www.lagoagrande.mg.gov.br/css/fontawesome-free-5.9.0-web/svgs/solid/angle-double-left.svg");
+  object-fit: cover;
 
 }
 
-.carousel::after {
-  background-image: url("https://www.lagoagrande.mg.gov.br/css/fontawesome-free-5.9.0-web/svgs/solid/angle-double-right.svg")
-}
 
 
