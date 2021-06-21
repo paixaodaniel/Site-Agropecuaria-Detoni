@@ -11581,11 +11581,30 @@ transition:1.4s;
 
 }
 
+.modal-header{
+  justify-content: flex-end;
+}
 
 .btn-close{
+  border: hidden;
+  background: transparent;
+  transform: scale(1.7);
+  margin-right: 15px;
 
 }
 
+.video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  }
+
+.video_carousel {
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .carousel-indicators{
   position: relative;
   top: 15px
@@ -11599,6 +11618,10 @@ transition:1.4s;
   border-radius: 4px;
   cursor: pointer;
 
+}
+.hover_opacity:hover{
+  filter:opacity(50%);
+  transition: 0.5s;
 }
 
 .indicator_img1{
@@ -11630,6 +11653,26 @@ transition:1.4s;
 }
 
 
+.indicator_img1_Fragrance{
+
+  content: url('../assets/img/Genealogias_e_Fotos/Fragrance8-FIV-da-Jasa-001.png');
+  object-fit: cover;
+
+
+}
+.indicator_img2_Fragrance{
+
+  content: url('../assets/img/Genealogias_e_Fotos/Fragrance8-FIV-da-Jasa-002.png');
+  object-fit: cover;
+
+}
+
+.indicator_img3_Fragrance{
+
+  content: url('../assets/img/Genealogias_e_Fotos/Fragrance8-FIV-da-Jasa-003.png');
+  object-fit: cover;
+
+}
 
 .carousel-indicators > .active{
   box-shadow: -8px 8px 7px rgba(0, 0, 0, 0.432);
