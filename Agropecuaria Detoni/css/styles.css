@@ -10327,18 +10327,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media(min-width:1200px){
 
-  .man1{
-
-    width: 150%;
-
-  }
-
-
-  .rowanu2{
-
-  margin-top: -10%;
-
-  }
 
   #top{
     background-image: url('../assets/img/1140px/topfull.png');
@@ -10364,15 +10352,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 @media(max-width:1200px){
 
-  .man1{
-
-    width: 170%;
-  }
-
-  .rowanu2{
-
-    margin-top: -15%;
-    }
 
     #mainNav .navbar-nav .nav-item .nav-link{
 
@@ -11581,6 +11560,10 @@ transition:1.4s;
 
 }
 
+
+/*MODAL _______________________________________________________*/
+
+
 .modal-header{
   justify-content: flex-end;
 }
@@ -11701,4 +11684,9 @@ position: absolute;
 .carousel-control-next-icon{
   transform: scale(1.5);
   filter: drop-shadow(0 0 5px black);
+}
+
+.test{
+
+
 }
