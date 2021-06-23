@@ -2032,7 +2032,8 @@ pre code {
   text-shadow: 0 0 0 #ffffff;
 }
 .form-control:focus {
-  color: #ffffff;
+  font-size: 12pt;
+  color: black;
   border-color: #ffeeb5;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.25);
