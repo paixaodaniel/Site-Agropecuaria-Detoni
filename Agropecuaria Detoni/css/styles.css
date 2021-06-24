@@ -10554,6 +10554,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 }
 
+
+
+
 @media(max-width:576px){
   .genealogia{
     display:none
@@ -10564,7 +10567,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   }
   .cl_400{
     font-size: 12pt !important;
-    margin-top: -40px;
     margin-right: -17px;
     margin-left: 5px;
 
@@ -10576,7 +10578,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .mg_gado2{
     margin-right: 9vw;
-    margin-left: 0;
+    margin-left: 10px;
   }
 
 }
@@ -10586,11 +10588,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .detalhe_branco{
     transform: scale(0.7);
-    margin: -110px 5% 0 -10% !important;
+    margin: -102px 5% 0 -10% !important;
   }
 
   .cl_400{
-    font-size: 11pt !important;
+    font-size: 12pt !important;
     margin-left: 5px;
 
   }

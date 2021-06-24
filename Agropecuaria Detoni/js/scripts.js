@@ -62,20 +62,19 @@ function openNav() {
 
   let op = window.document.getElementById('open')
   let cl = window.document.getElementById('close')
+  
   function abrir() {
     document.getElementById("gado1").style.display = "none"
     document.getElementById("gado2").style.maxHeight = "2500px"
-    document.getElementById("ag").style.height = "calc(500px - 29vh)"
-    document.getElementById("ag").style.overflow = "hidden"
+    document.getElementById("open").style.display = "none"
 
-    op.style.display = "none"
+
   }
 
   function fechar() {
     document.getElementById("gado1").style.display = "block"
     document.getElementById("gado2").style.maxHeight = "0px"
-    document.getElementById("ag").style.height = "unset"
-    op.style.display = "flex"
+    document.getElementById("open").style.display = "flex"
 
   }
 
