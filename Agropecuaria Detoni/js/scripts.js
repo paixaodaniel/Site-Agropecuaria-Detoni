@@ -66,6 +66,8 @@ function openNav() {
     document.getElementById("gado1").style.display = "none"
     document.getElementById("gado2").style.maxHeight = "2500px"
     document.getElementById("ag").style.height = "calc(500px - 29vh)"
+    document.getElementById("ag").style.overflow = "hidden"
+
     op.style.display = "none"
   }
 

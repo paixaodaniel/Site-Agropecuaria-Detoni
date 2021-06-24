@@ -10371,7 +10371,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .mg_gado{
   margin-right: 4%;
-  margin-left: 1%;
+
 }
 
 
@@ -10401,10 +10401,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 @media(max-width:991px){
 
   .navbar-brand{
-    padding-right: 40px;
-    padding-left: 0;
-    margin: 0 auto ;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 
   }
 
@@ -10412,6 +10413,7 @@ section#contact form#contactForm :-ms-input-placeholder {
    height: 100px;
 
   }
+
 
   .btn_vermais{
     display: none;
@@ -10560,7 +10562,22 @@ section#contact form#contactForm :-ms-input-placeholder {
     display: block !important;
     margin-bottom: -5%;
   }
+  .cl_400{
+    font-size: 12pt !important;
+    margin-top: -40px;
+    margin-right: -17px;
+    margin-left: 5px;
 
+  }
+
+  .mg_gado{
+    margin-right: 8vw;
+  }
+
+  .mg_gado2{
+    margin-right: 9vw;
+    margin-left: 0;
+  }
 
 }
 
@@ -10569,11 +10586,12 @@ section#contact form#contactForm :-ms-input-placeholder {
 
   .detalhe_branco{
     transform: scale(0.7);
-    margin: -33% 5% 0 -10% !important;
+    margin: -110px 5% 0 -10% !important;
   }
 
   .cl_400{
-    font-size: 12pt !important;
+    font-size: 11pt !important;
+    margin-left: 5px;
 
   }
 
@@ -11438,7 +11456,6 @@ margin-right: 5px;
 .click_bar{
   display: flex;
   justify-content: center;
-  margin-left: 3%;
   padding-top: 20px;
 
 }
@@ -11485,7 +11502,7 @@ input[name="r"]{
  text-decoration: underline;
  display: flex;
  justify-content: center;
- margin-left: 3%;
+
 }
 
 .seta:hover{
@@ -11550,7 +11567,7 @@ transition:1.4s;
   text-decoration: underline;
   display: flex;
   justify-content: center;
-  margin-left: 3%;
+
  }
 
  .seta_up:hover{
