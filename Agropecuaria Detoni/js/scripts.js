@@ -62,10 +62,10 @@ function openNav() {
 
   let op = window.document.getElementById('open')
   let cl = window.document.getElementById('close')
-  
+
   function abrir() {
     document.getElementById("gado1").style.display = "none"
-    document.getElementById("gado2").style.maxHeight = "2500px"
+    document.getElementById("gado2").style.maxHeight = "fit-content"
     document.getElementById("open").style.display = "none"
 
 
