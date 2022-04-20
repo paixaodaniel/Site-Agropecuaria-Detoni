@@ -158,6 +158,8 @@
           <input type="radio" name="r" id="r2">
           <input type="radio" name="r" id="r3">
           <input type="radio" name="r" id="r4">
+          <input type="radio" name="r" id="r5">
+
 
 
 
@@ -276,11 +278,38 @@
             </div>
           </div>
 
+          <div class="s5 row">
+
+            <div class="col-lg-3 mg_gado">
+              <div class="container" style="width: 235px">
+                <img src="assets/img/1140px/004-icon=premiado.png" class="premiado" alt="">
+                <img src="assets/img/1140px/profile-rosa.jpg"
+                  style="width:250px; border-radius: 10px; margin-top: -45px;" alt="">
+              </div>
+            </div>
+
+            <div class="col " style="margin-left: 3%;">
+              <h3 class="site-section-heading_3 text-uppercase" style="color: white;">ROSA FIV TERRAMATA - TMA 1590
+              </h3>
+              <div class="dsc_gado">
+                <p> <strong>Filiação:</strong> &nbsp KAIAK TE MAFRA - CAMT 3083 x FRANCESA TERRAMATA - TMA 438</p>
+                <div class="dsc_gado_2" style="margin-top: 44px;">
+
+                  <p> <strong>Raça:</strong> &nbsp NELORE</p>
+                  <p> <strong>Categoria:</strong> &nbsp PO</p>
+                  <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
+                  <p> <strong>Data de Nascimento:</strong> &nbsp 15/04/2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="click_bar">
             <label for="r1" class="bar ck1"></label>
             <label for="r2" class="bar ck2"></label>
             <label for="r3" class="bar ck3"></label>
             <label for="r4" class="bar ck4"></label>
+            <label for="r5" class="bar ck5"></label>
           </div>
         </div>
       </div>
@@ -453,6 +482,43 @@
     <div class="underline"></div>
 
 
+        <!--Gado 5-->
+
+        <div class="row">
+
+          <div class="col-lg-3  mg_gado2">
+            <div class="container" style="width: 235px;">
+              <img src="assets/img/1140px/004-icon=premiado.png" class="premiado" alt="">
+              <img src="assets/img/1140px/profile-rosa.jpg" style="width:250px;border-radius: 10px; margin-top: -45px;"
+                alt="">
+              <input class="btn_vermais" type="button" value="VER MAIS" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop5">
+    
+            </div>
+          </div>
+    
+          <div class="col" style="padding-left: 25px;">
+            <h3 class="site-section-heading_4 text-uppercase">ROSA FIV TERRAMATA - TMA 1590</h3>
+            <div class="dsc_gado" style="color: black;">
+              <p> <strong>Filiação:</strong> &nbsp KAIAK TE MAFRA - CAMT 3083 x FRANCESA TERRAMATA - TMA 438</p>
+    
+              <div class="dsc_gado_2" style="margin-top: 44px;">
+    
+                <p> <strong>Raça:</strong> &nbsp NELORE</p>
+                <p> <strong>Categoria:</strong> &nbsp PO</p>
+                <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
+                <p> <strong>Data de Nascimento:</strong> &nbsp 15/04/2016</p>
+                <input class="btn_vermais2" type="button" value="VER MAIS" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop5">
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div class="underline"></div>
+
+
 
 
     <label id="close" onclick="fechar()" class="seta_up mt-5">Fechar detalhes &nbsp<i
@@ -486,19 +552,54 @@
                   <p> <strong>Categoria:</strong> &nbsp PO</p>
                   <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
                   <p> <strong>Data de Nascimento:</strong> &nbsp 02/09/2013</p>
-                  <h3 class="site-section-heading text-uppercase mt-4">Genealogia</h3>
 
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Genealogia<h3>
+                    <h3 id="abrir_genealogia" onclick="abrir_genealogia('genealogia', 'abrir_genealogia', 'fechar_genealogia')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_genealogia" onclick="fechar_genealogia('genealogia', 'abrir_genealogia', 'fechar_genealogia')" class="col expand-modal">-<h3>
+                  </div>
+                  <div id="genealogia" class="exp_2">
+                    <img style ="margin-bottom: 10px;"src="./assets/img/Genealogias_e_Fotos/genealogia hanin fiv.svg" class="genealogia" alt="">
+                    <img style ="margin-bottom: 20px;" src="./assets/img/Genealogias_e_Fotos/genealogia hanin fiv-vertical.svg" class="genealogia2"
+                      alt="">
+                  </div>
+                  <div id = "cria-btn" class="site-section-heading_5 text-uppercase row justify-content-around">
+                    <h3 class="col">Crias Premiadas<h3>
+                    <h3 id="abrir_cria" onclick="abrir_cria('cria','abrir_cria', 'fechar_cria')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_cria" onclick="fechar_cria('cria','abrir_cria', 'fechar_cria')" class="col expand-modal">-<h3>
+                  </div>
+                  <div id="cria" class="exp_2">
+                    <img src="./assets/img/crias/cria-hanin.png" class="modal_img" alt="">
+                    <div class="col" style="padding-left: 25px;">
+                      <h3 class="site-section-heading text-uppercase mt-4 ">Felicidade Santa Irene - NMH 106</h3>
+                      <div class="dsc_gado" style="color: black;">
+                        <div class="dsc_gado_2" style="margin-top: 15px;">
+                          <p> <strong>Filiação:</strong> &nbsp KAIAK TE MAFRA - CAMT 3083 x HAMIN FIV DA RS l - RSBP 2264<p>
+                          <p> <strong>Raça:</strong> &nbsp NELORE</p>
+                          <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
+                          <p> <strong>Data de Nascimento:</strong> &nbsp 03/09/2020</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Galeria<h3>
+                    <h3 id="abrir_galeria" onclick="abrir_galeria('galeria','abrir_galeria', 'fechar_galeria')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_galeria" onclick="fechar_galeria('galeria','abrir_galeria', 'fechar_galeria')" class="col expand-modal">-<h3>
+                  </div>
+               
                 </div>
               </div>
             </div>
 
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia hanin fiv.svg" class="genealogia" alt="">
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia hanin fiv-vertical.svg" class="genealogia2" alt="">
-
             <!--GALERIA MODAL 1-->
+            
+
+           
+          <div id="galeria" class=" exp_2">
 
 
-            <div id="carouselExampleIndicators" class="carousel " data-ride="carousel" data-interval="false"
+            <div id="carouselExampleIndicators" class="carousel" data-ride="carousel" data-interval="false"
               style="margin-top: 30px;">
 
               <div class="carousel-inner">
@@ -544,6 +645,7 @@
               </a>
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -568,23 +670,28 @@
               <h3 class="site-section-heading text-uppercase mt-4 ">FRAGRANCE8 FIV DA JASA - BSAR 68</h3>
               <div class="dsc_gado" style="color: black;">
                 <p> <strong>Filiação:</strong> &nbsp BASCO DA SM - CSCN 7384 x SUAVE ESSÊNCIA GREN. - GREN 4029</p>
-                <div class="dsc_gado_2" style="margin-top: 15px;">
-
-                  <p> <strong>Raça:</strong> &nbsp NELORE</p>
-                  <p> <strong>Categoria:</strong> &nbsp PO</p>
-                  <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
-                  <p> <strong>Data de Nascimento:</strong> &nbsp 01/07/2014</p>
-                  <h3 class="site-section-heading text-uppercase mt-4">Genealogia</h3>
+                <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                  <h3 class="col">Genealogia<h3>
+                  <h3 id="abrir_genealogia2" onclick="abrir_genealogia('genealogia2', 'abrir_genealogia2', 'fechar_genealogia2')" class="col expand-modal">+<h3>
+                  <h3 style="display: none; font-size: 35pt;" id="fechar_genealogia2" onclick="fechar_genealogia('genealogia2', 'abrir_genealogia2', 'fechar_genealogia2')" class="col expand-modal">-<h3>
+                </div>
+                <div id="genealogia2" class="exp_2">
+                  <img src="./assets/img/Genealogias_e_Fotos/genealogia fragrance8.svg" class="genealogia" alt="">
+                  <img src="./assets/img/Genealogias_e_Fotos/genealogia fragrance8-vertical.svg" class="genealogia2" alt="">
+                </div>
+                <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                  <h3 class="col">Galeria<h3>
+                  <h3 id="abrir_galeria2" onclick="abrir_galeria('galeria2','abrir_galeria2', 'fechar_galeria2')" class="col expand-modal">+<h3>
+                  <h3 style="display: none; font-size: 35pt;" id="fechar_galeria2" onclick="fechar_galeria('galeria2','abrir_galeria2', 'fechar_galeria2')" class="col expand-modal">-<h3>
+                </div>
 
                 </div>
               </div>
-            </div>
-
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia fragrance8.svg" class="genealogia" alt="">
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia fragrance8-vertical.svg" class="genealogia2" alt="">
-
+            
+                     
             <!--GALERIA MODAL 2-->
 
+            <div id="galeria2" class="exp_2">
 
             <div id="carouselExampleIndicators2" class="carousel " data-ride="carousel" data-interval="false"
               style="margin-top: 30px;">
@@ -633,6 +740,7 @@
               </a>
 
             </div>
+            </div>
           </div>
         </div>
       </div>
@@ -665,17 +773,29 @@
                   <p> <strong>Categoria:</strong> &nbsp PO</p>
                   <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
                   <p> <strong>Data de Nascimento:</strong> &nbsp 04/05/2014</p>
-                  <h3 class="site-section-heading text-uppercase mt-4">Genealogia</h3>
-
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Genealogia<h3>
+                    <h3 id="abrir_genealogia3" onclick="abrir_genealogia('genealogia3', 'abrir_genealogia3', 'fechar_genealogia3')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_genealogia3" onclick="fechar_genealogia('genealogia3', 'abrir_genealogia3', 'fechar_genealogia3')" class="col expand-modal">-<h3>
+                  </div>
+                  <div id="genealogia3" class="exp_2">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia carinhosa.svg" class="genealogia" alt="">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia carinhosa vertical.svg" class="genealogia2" alt="">
+                  </div>
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Galeria<h3>
+                    <h3 id="abrir_galeria3" onclick="abrir_galeria('galeria3','abrir_galeria3', 'fechar_galeria3')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_galeria3" onclick="fechar_galeria('galeria3','abrir_galeria3', 'fechar_galeria3')" class="col expand-modal">-<h3>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia carinhosa.svg" class="genealogia" alt="">
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia carinhosa vertical.svg" class="genealogia2" alt="">
+            
 
             <!--GALERIA MODAL 3-->
 
+            <div id="galeria3" class="exp_2">
 
             <div id="carouselExampleIndicators3" class="carousel " data-ride="carousel" data-interval="false"
               style="margin-top: 30px;">
@@ -726,6 +846,7 @@
 
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
@@ -755,17 +876,29 @@
                   <p> <strong>Categoria:</strong> &nbsp PO</p>
                   <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
                   <p> <strong>Data de Nascimento:</strong> &nbsp 18/10/2016</p>
-                  <h3 class="site-section-heading text-uppercase mt-4">Genealogia</h3>
-
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Genealogia<h3>
+                    <h3 id="abrir_genealogia4" onclick="abrir_genealogia('genealogia4', 'abrir_genealogia4', 'fechar_genealogia4')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_genealogia4" onclick="fechar_genealogia('genealogia4', 'abrir_genealogia4', 'fechar_genealogia4')" class="col expand-modal">-<h3>
+                  </div>
+                  <div id="genealogia4" class="exp_2">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia mabelle.svg" class="genealogia" alt="">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia mabelle vertical.svg" class="genealogia2" alt="">
+                  </div>
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Galeria<h3>
+                    <h3 id="abrir_galeria4" onclick="abrir_galeria('galeria4','abrir_galeria4', 'fechar_galeria4')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_galeria4" onclick="fechar_galeria('galeria4','abrir_galeria4', 'fechar_galeria4')" class="col expand-modal">-<h3>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia mabelle.svg" class="genealogia" alt="">
-            <img src="./assets/img/Genealogias_e_Fotos/genealogia mabelle vertical.svg" class="genealogia2" alt="">
+           
 
             <!--GALERIA MODAL 4-->
 
+            <div id="galeria4" class="exp_2">
 
             <div id="carouselExampleIndicators4" class="carousel " data-ride="carousel" data-interval="false"
               style="margin-top: 30px;">
@@ -816,13 +949,121 @@
 
             </div>
           </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+      <!--MODAL 5-->
+
+      <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> <i
+                class="fas fa-times"></i></button>
+          </div>
+          <div class="modal-body">
+
+            <img src="./assets/img/1140px/capa-rosa.jpg" class="modal_img" alt="">
+            <div class="col" style="padding-left: 25px;">
+              <h3 class="site-section-heading text-uppercase mt-4 ">ROSA FIV TERRAMATA - TMA 1590</h3>
+              <div class="dsc_gado" style="color: black;">
+                <p> <strong>Filiação:</strong> &nbsp KAIAK TE MAFRA - CAMT 3083 x FRANCESA TERRAMATA - TMA 438</p>
+                <div class="dsc_gado_2" style="margin-top: 15px;">
+
+                  <p> <strong>Raça:</strong> &nbsp NELORE</p>
+                  <p> <strong>Categoria:</strong> &nbsp PO</p>
+                  <p> <strong>Sexo:</strong> &nbsp Fêmea</p>
+                  <p> <strong>Data de Nascimento:</strong> &nbsp 15/04/2016</p>
+
+            
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Genealogia<h3>
+                    <h3 id="abrir_genealogia5" onclick="abrir_genealogia('genealogia5', 'abrir_genealogia5', 'fechar_genealogia5')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_genealogia5" onclick="fechar_genealogia('genealogia5', 'abrir_genealogia5', 'fechar_genealogia5')" class="col expand-modal">-<h3>
+                  </div>
+                  <div id="genealogia5" class="exp_2">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia rosa fiv.svg" class="genealogia" alt="">
+                    <img src="./assets/img/Genealogias_e_Fotos/genealogia rosa fiv-vertical.svg" class="genealogia2" alt="">
+                  </div>
+                  <div class="site-section-heading_5 text-uppercase mt-4 row justify-content-around">
+                    <h3 class="col">Galeria<h3>
+                    <h3 id="abrir_galeria5" onclick="abrir_galeria('galeria5','abrir_galeria5', 'fechar_galeria5')" class="col expand-modal">+<h3>
+                    <h3 style="display: none; font-size: 35pt;" id="fechar_galeria5" onclick="fechar_galeria('galeria5','abrir_galeria5', 'fechar_galeria5')" class="col expand-modal">-<h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+            <!--GALERIA MODAL 5-->
+
+            <div id="galeria5" class="exp_2">
+
+            <div id="carouselExampleIndicators5" class="carousel " data-ride="carousel" data-interval="false"
+              style="margin-top: 30px;">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active video_wrapper">
+                  <iframe class="d-block w-100 video_carousel" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/aWbxUaJUwdA" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/Genealogias_e_Fotos/Rosa 003.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/Genealogias_e_Fotos/Rosa 002.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/Genealogias_e_Fotos/Rosa 001.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/Genealogias_e_Fotos/Rosa 004.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="./assets/img/Genealogias_e_Fotos/Rosa 005.jpg" alt="">
+                </div>
+
+              </div>
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img4-1_Rosa hover_opacity"
+                  data-slide-to="0"></li>
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img1_Rosa hover_opacity"
+                  data-slide-to="1" class="active"></li>
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img2_Rosa hover_opacity"
+                  data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img3_Rosa hover_opacity"
+                  data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img4_Rosa hover_opacity"
+                  data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators5 " class="indicator indicator_img5_Rosa hover_opacity"
+                  data-slide-to="5"></li>
+
+              </ol>
+
+              <a class="carousel-control-prev" href="#carouselExampleIndicators5" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators5" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
-
-
-
 
 
 
